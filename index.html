@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel ="stylesheet" href="style.css" type ="text/css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src = "order.js" type ="module" defer></script>
+  <script src = "srcipt.js" type ="module" defer></script>
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  
+  <section class = "section-selection">
+    <h1>Desserts</h1>
+    <!-- in this div we will add the different product cards using js-->
+    <div id= "box-product-grid"></div> 
+  </section>
+
+  <!-- in this section will apear the different order -->
+  <section class ="section-panier">
+    
+<!-- the span will be modified by js to add the right amont of order -->
+    <h2>Your Cart <span>(0)</span></h2>
+    <nav class = "nav-empty">
+      <div id ="footer">
+        <!-- This div contain the button and the text who will appear when an odrer is done -->
+        <div class ="finalise-command">
+          <div class ="final-price">
+            <p>Order Total</p>
+            <h2></h2>
+          </div>
+          <p class ="neutral-delivery"><img src = "assets/images/icon-carbon-neutral.svg">This is a <strong>carbon-neutral</strong> delivery</p>
+          <div class ="command-btn">Confirm Order</div>
+        </div>
+        <!-- This div contain the text for when you dont have any order 
+         (his display is set to "none" whe you order something) -->
+        <div class ="text-no-order">
+          <img src ="assets/images/illustration-empty-cart.svg" alt ="image empty cart" class = "img-empty-cart">
+          <p class ="text-empty-cart">Your added items will appear here</p>
+        </div>
+      </div>
+    </nav>
+
+  </section>
+   
+
+
+  
+</body>
+<section class = "OrderConfirmationDisplay">
+  
+  <img src ="assets/images/icon-order-confirmed.svg" class ="iconConfirmed" alt  ="icon order confirmed">
+  <h1>Order Confirmed</h1>
+  <p class ="text-enjoy">We hope you enjoy your food!</p>
+  <div class ="orderDisplay">
+
+  </div>
+
+  <div class = "btn-new-command command-btn">Start New Order</div>
+</section>
+
+</html>
