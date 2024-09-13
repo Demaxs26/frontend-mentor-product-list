@@ -1,5 +1,5 @@
 //fetch and constantes
-const reponse = await fetch("data.json");
+const reponse = await fetch("https://raw.githubusercontent.com/Demaxs26/frontend-mentor-product-list/main/data.json");
 const data = await reponse.json();
 const paymentPlace = document.querySelector(".nav-empty");
 const navFooter = document.querySelector("#footer");
