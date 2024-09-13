@@ -2,7 +2,7 @@ import { ajoutNewOrder, displayCorrectPrice} from "/order.js";
 
 
 // fetching the json from the folder ( actually i dont if it will work once on github)
-const reponse = await fetch("data.json");
+const reponse = await fetch("https://raw.githubusercontent.com/Demaxs26/frontend-mentor-product-list/main/data.json");
 const data = await reponse.json();
 
 
